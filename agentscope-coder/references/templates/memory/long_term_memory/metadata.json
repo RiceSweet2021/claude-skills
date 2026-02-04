@@ -1,0 +1,20 @@
+{
+  "id": "long_term_memory",
+  "title": "长期记忆使用",
+  "category": "memory",
+  "difficulty": "intermediate",
+  "keywords": ["longterm", "long term", "记忆", "reme", "mem0", "memory", "存储"],
+  "description": "学习如何使用 AgentScope 的长期记忆功能持久化存储对话历史",
+  "learning_objectives": [
+    "理解长期记忆与短期记忆的区别",
+    "学会配置记忆存储后端",
+    "掌握记忆的读取和写入操作"
+  ],
+  "prerequisites": [
+    "Python 基础",
+    "AgentScope 安装",
+    "Redis 或 Mem0 配置（可选）"
+  ],
+  "estimated_time": "25-35分钟",
+  "priority": 10
+}

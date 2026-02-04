@@ -1,0 +1,20 @@
+{
+  "id": "react_agent",
+  "title": "ReActAgent 工具调用",
+  "category": "agents",
+  "difficulty": "intermediate",
+  "keywords": ["react", "tool", "工具", "推理", "reactagent"],
+  "description": "学习如何使用 ReActAgent 进行推理和工具调用",
+  "learning_objectives": [
+    "理解 ReActAgent 的工作原理",
+    "学会定义和注册工具",
+    "掌握 Agent 配置方法"
+  ],
+  "prerequisites": [
+    "Python 基础",
+    "AgentScope 安装与配置",
+    "模型 API 密钥获取"
+  ],
+  "estimated_time": "20-30分钟",
+  "priority": 10
+}

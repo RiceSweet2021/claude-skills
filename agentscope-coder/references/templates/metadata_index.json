@@ -1,0 +1,239 @@
+{
+  "version": "2.0",
+  "updated": "2026-01-28",
+  "templates": [
+    {
+      "id": "react_agent",
+      "title": "ReActAgent 工具调用",
+      "category": "agents",
+      "difficulty": "intermediate",
+      "keywords": ["react", "tool", "工具", "推理", "reactagent"],
+      "description": "学习如何使用 ReActAgent 进行推理和工具调用",
+      "learning_objectives": [
+        "理解 ReActAgent 的工作原理",
+        "学会定义和注册工具",
+        "掌握 Agent 配置方法"
+      ],
+      "prerequisites": [
+        "Python 基础",
+        "AgentScope 安装与配置",
+        "模型 API 密钥获取"
+      ],
+      "estimated_time": "20-30分钟",
+      "priority": 10
+    },
+    {
+      "id": "long_term_memory",
+      "title": "长期记忆使用",
+      "category": "memory",
+      "difficulty": "intermediate",
+      "keywords": ["longterm", "long term", "记忆", "reme", "mem0", "memory", "存储"],
+      "description": "学习如何使用 AgentScope 的长期记忆功能持久化存储对话历史",
+      "learning_objectives": [
+        "理解长期记忆与短期记忆的区别",
+        "学会配置记忆存储后端",
+        "掌握记忆的读取和写入操作"
+      ],
+      "prerequisites": [
+        "Python 基础",
+        "AgentScope 安装",
+        "Redis 或 Mem0 配置（可选）"
+      ],
+      "estimated_time": "25-35分钟",
+      "priority": 10
+    },
+    {
+      "id": "custom_tool",
+      "title": "自定义工具函数",
+      "category": "tools",
+      "difficulty": "beginner",
+      "keywords": ["custom", "tool", "工具", "function", "函数", "定义", "装饰器"],
+      "description": "学习如何定义和使用自定义工具函数扩展 Agent 能力",
+      "learning_objectives": [
+        "理解工具函数的作用",
+        "学会定义符合规范的工具",
+        "掌握工具注册和使用方法"
+      ],
+      "prerequisites": [
+        "Python 函数基础",
+        "类型注解",
+        "AgentScope 基础"
+      ],
+      "estimated_time": "15-20分钟",
+      "priority": 9
+    },
+    {
+      "id": "basic_chat_agent",
+      "title": "基础对话 Agent",
+      "category": "agents",
+      "difficulty": "beginner",
+      "keywords": ["chat", "对话", "基础", "聊天", "chatagent"],
+      "description": "学习 ChatAgent 的基本用法和系统提示词设置",
+      "learning_objectives": [
+        "理解 ChatAgent 的基本概念",
+        "学会设置系统提示词",
+        "掌握多轮对话的实现方法"
+      ],
+      "prerequisites": [
+        "Python 基础",
+        "AgentScope 安装"
+      ],
+      "estimated_time": "10-15分钟",
+      "priority": 8
+    },
+    {
+      "id": "subagent",
+      "title": "SubAgent 子智能体",
+      "category": "agents",
+      "difficulty": "intermediate",
+      "keywords": ["subagent", "子", "嵌套", "协作", "层级"],
+      "description": "学习如何在 Agent 中嵌套使用其他 Agent 实现专业分工",
+      "learning_objectives": [
+        "理解 SubAgent 的架构模式",
+        "学会创建专业化的子 Agent",
+        "掌握主从 Agent 的协调机制"
+      ],
+      "prerequisites": [
+        "ChatAgent 基础",
+        "ReActAgent 基础",
+        "理解 Agent 通信"
+      ],
+      "estimated_time": "20-30分钟",
+      "priority": 7
+    },
+    {
+      "id": "short_term_memory",
+      "title": "短期记忆管理",
+      "category": "memory",
+      "difficulty": "beginner",
+      "keywords": ["short", "短期", "记忆", "memory", "对话历史", "inmemory"],
+      "description": "学习 InMemoryMemory 在多轮对话中的应用",
+      "learning_objectives": [
+        "理解短期记忆的概念和作用",
+        "学会使用 InMemoryMemory",
+        "掌握记忆的基本操作（查看、清空）"
+      ],
+      "prerequisites": [
+        "ChatAgent 基础",
+        "理解对话状态"
+      ],
+      "estimated_time": "10-15分钟",
+      "priority": 8
+    },
+    {
+      "id": "agent_skill",
+      "title": "AgentSkill 机制",
+      "category": "tools",
+      "difficulty": "intermediate",
+      "keywords": ["skill", "技能", "agentskill", "类", "封装"],
+      "description": "学习如何创建和管理 Agent 技能类",
+      "learning_objectives": [
+        "理解 Skill 与工具函数的区别",
+        "学会定义 Skill 类",
+        "掌握技能的注册和调用方法"
+      ],
+      "prerequisites": [
+        "Python 面向对象基础",
+        "工具函数基础"
+      ],
+      "estimated_time": "15-20分钟",
+      "priority": 8
+    },
+    {
+      "id": "sequential_pipeline",
+      "title": "顺序流水线",
+      "category": "workflows",
+      "difficulty": "intermediate",
+      "keywords": ["pipeline", "流水线", "顺序", "sequential", "多阶段"],
+      "description": "学习使用 SequentialPipeline 组织多阶段任务处理",
+      "learning_objectives": [
+        "理解流水线的概念和优势",
+        "学会创建顺序处理流程",
+        "掌握阶段间的结果传递"
+      ],
+      "prerequisites": [
+        "ChatAgent 基础",
+        "理解多步骤任务"
+      ],
+      "estimated_time": "20-25分钟",
+      "priority": 8
+    },
+    {
+      "id": "msg_hub",
+      "title": "消息中心多智能体",
+      "category": "workflows",
+      "difficulty": "intermediate",
+      "keywords": ["msghub", "消息中心", "广播", "通信", "网络"],
+      "description": "学习使用 MsgHub 实现 Agent 之间的通信协作",
+      "learning_objectives": [
+        "理解 MsgHub 的通信机制",
+        "学会建立 Agent 连接关系",
+        "掌握广播和定向消息发送"
+      ],
+      "prerequisites": [
+        "ChatAgent 基础",
+        "理解多 Agent 系统"
+      ],
+      "estimated_time": "20-25分钟",
+      "priority": 7
+    },
+    {
+      "id": "streaming",
+      "title": "流式输出",
+      "category": "advanced",
+      "difficulty": "intermediate",
+      "keywords": ["streaming", "流式", "实时", "输出", "stream"],
+      "description": "学习如何实现 Agent 的流式响应输出",
+      "learning_objectives": [
+        "理解流式输出的优势",
+        "学会启用和使用 stream 模式",
+        "掌握流式输出的处理和展示"
+      ],
+      "prerequisites": [
+        "ChatAgent 基础",
+        "Python 迭代器概念"
+      ],
+      "estimated_time": "15-20分钟",
+      "priority": 6
+    },
+    {
+      "id": "multi_agent",
+      "title": "多智能体协作",
+      "category": "advanced",
+      "difficulty": "intermediate",
+      "keywords": ["multi", "多agent", "协作", "讨论", "辩论"],
+      "description": "学习多 Agent 协作模式，包括讨论、辩论和工作分工",
+      "learning_objectives": [
+        "理解多 Agent 协作的价值",
+        "学会设计不同角色的 Agent",
+        "掌握 Agent 间的对话流程"
+      ],
+      "prerequisites": [
+        "ChatAgent 基础",
+        "系统提示词设计"
+      ],
+      "estimated_time": "25-30分钟",
+      "priority": 7
+    },
+    {
+      "id": "rag",
+      "title": "RAG 检索增强",
+      "category": "advanced",
+      "difficulty": "advanced",
+      "keywords": ["rag", "检索", "增强", "知识库", "向量"],
+      "description": "学习使用 RAG 技术增强 Agent 的知识问答能力",
+      "learning_objectives": [
+        "理解 RAG 的核心概念和工作流程",
+        "学会构建知识库和实现检索",
+        "掌握检索增强生成的实现方法"
+      ],
+      "prerequisites": [
+        "ChatAgent 基础",
+        "向量检索概念",
+        "Prompt 工程"
+      ],
+      "estimated_time": "30-40分钟",
+      "priority": 9
+    }
+  ]
+}
