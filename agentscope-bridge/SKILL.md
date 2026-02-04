@@ -1,6 +1,6 @@
 ---
 name: agentscope-bridge
-description: AgentScope development workflow coordinator. Implements "Commander + Advisor" architecture: superpowers (commander) decides WHAT/WHY, agentscope-coder and skill-creator (advisors) provide domain knowledge. For any AgentScope framework development tasks. Triggers: agentscope + implement/create/feature/fix/debug, ReActAgent, ChatAgent, MsgHub, MsgDispatcher, Pipeline, agent + memory/tool/workflow, multi-agent, skill + create/modify
+description: "AgentScope development workflow coordinator. Implements Commander + Advisor architecture: superpowers (commander) decides WHAT/WHY, agentscope-coder and skill-creator (advisors) provide domain knowledge. For any AgentScope framework development tasks. Triggers: agentscope + implement/create/feature/fix/debug, ReActAgent, ChatAgent, MsgHub, MsgDispatcher, Pipeline, agent + memory/tool/workflow, multi-agent, skill + create/modify"
 ---
 
 # AgentScope Bridge

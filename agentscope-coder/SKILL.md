@@ -1,6 +1,6 @@
 ---
 name: agentscope-coder
-description: AgentScope code generator. 12 pre-built templates + LLM fallback. Supports: ReActAgent, ChatAgent, MsgHub, Pipeline, memory, tools, streaming, RAG, multi-agent. Triggers: agentscope, agent, react, chat, memory, tool, workflow, pipeline, msghub, streaming, rag
+description: "AgentScope code generator. 12 pre-built templates + LLM fallback. Supports: ReActAgent, ChatAgent, MsgHub, Pipeline, memory, tools, streaming, RAG, multi-agent. Triggers: agentscope, agent, react, chat, memory, tool, workflow, pipeline, msghub, streaming, rag"
 ---
 
 # AgentScope Coder
